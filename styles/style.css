@@ -57,7 +57,10 @@ Header Section Styles
     width: 16px;
     height: 14px;
 }
-
+.page-header:hover img {
+    transform: scale(1.1) rotate(120deg) skew(-10deg);
+    transition: transform 1s ease-in-out;
+}
 /* Players Style  */
 .all-players{
     display: flex;
@@ -85,7 +88,7 @@ Header Section Styles
 .player h1 {
    font-size: 28px;
 }
- 
+
 /* highlights styles */
 .highlights{
     display: flex;
@@ -113,7 +116,63 @@ Header Section Styles
 .highlights p{
     margin-bottom: 50px;
 }
+/* Tables section  */
+
+.table-a , .table-b{
+    border-collapse:collapse;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin-left: 600px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    
+
+}
+table th{
+    background-color: rgba(167, 45, 255, 0.664);
+}
+.active-row{
+    background-color: rgba(170, 170, 170, 0.479);
+    font-size: 1.2em;
+}
+caption{
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+td{
+    padding: 30px;
+}
+
+
 /* footer style  */
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:600px;
+    
+}
+.newsletter h1{
+    font-size: 40px;
+}
+.email-area{
+    max-width: 650px;
+    width: 100%;
+    margin-right: 50px;
+    
+}
+.email-area input{
+width: 100%;
+padding: 30px 50px 30px 30px;
+border-radius: 5px;
+border: 1px solid grey;
+margin-bottom: 30px;
+
+}
+
+
 .footer-sec{
     display: flex;
     flex-direction: column;
@@ -137,4 +196,116 @@ Header Section Styles
     
     font-size: 18px;
     font-weight: 400px;
+}
+/* Media Query */
+/* Android Devices */
+
+@media only screen and (max-width:688px) {
+    body{
+        width: 360px;
+        
+    }
+    main{
+        overflow-x: hidden;
+       
+
+    }
+    .page-title{
+        
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+    .page-header{
+        
+        height: 695px;
+        width: 375px;
+    }
+    .page-title h1{
+        font-size: 36px;
+        margin-bottom: 28px;
+    }
+    .banner{
+        width: 329px;
+        height: 259.17px;
+        margin-top: 50px;
+        margin: 60px 25px 20px 16px;
+    }
+   
+    .players{
+        margin-left: 16px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 24px;
+        grid-column-gap: 30px;
+       
+    }
+    /* players  */
+   
+    /* highlights */
+    .highlights{
+        display: flex;
+        flex-direction: column;
+    }
+    .highlights-info{
+        width: 329px;
+        height: 231px;
+        margin-left: 56px;
+        margin-bottom: 100px;
+    }
+    .highlights h1{
+        font-size: 30px;
+        margin: 0px;
+    }
+    .highlights-image{
+        width: 328px;
+        height: 248px;
+        margin: 29px 16px 50px 16px;
+    }
+    /* table  */
+    .table-a , .table-b{
+        border-collapse:collapse;
+        font-size: .5em;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        margin-left: 16px;
+        margin-bottom: 50px;
+        margin-top: 100px;
+        
+    
+    }
+
+    td{
+        padding: 13px;
+    }
+    /* Newsletter  */
+    .newsletter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left:16px;
+        margin-right: 20px;
+    }
+    .email-area{
+        max-width: 200px;
+        width: 80%;
+        margin-right: 50px;
+        
+    }
+    /* footer  */
+    .footer-sec{
+        
+        margin-bottom: 183px;
+    }
+    .footer-sec img{
+        width: 271px;
+        height: 63px;
+    }
+    .icons .fab, .fa-basketball-ball{
+        width: 32px;
+        height: 32px;
+        color: slategray;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        
+    }
+    
 }
