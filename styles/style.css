@@ -133,7 +133,8 @@ table th{
 }
 .active-row{
     background-color: rgba(170, 170, 170, 0.479);
-    font-size: 1.2em;
+    font-size: 1.3em;
+    
 }
 caption{
     font-size: 30px;
@@ -233,16 +234,17 @@ margin-bottom: 30px;
         margin: 60px 25px 20px 16px;
     }
    
+    
+    /* players  */
     .players{
         margin-left: 16px;
+        margin-right: 14px;
         display: grid;
         grid-template-columns: repeat(1,1fr);
         grid-row-gap: 24px;
         grid-column-gap: 30px;
        
     }
-    /* players  */
-   
     /* highlights */
     .highlights{
         display: flex;
@@ -259,17 +261,17 @@ margin-bottom: 30px;
         margin: 0px;
     }
     .highlights-image{
-        width: 328px;
-        height: 248px;
-        margin: 29px 16px 50px 16px;
+        width: 350px;
+        height: 250px;
+        margin: 59px 5px 30px 5px;
     }
     /* table  */
     .table-a , .table-b{
         border-collapse:collapse;
         font-size: .5em;
         box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-        margin-left: 16px;
-        margin-bottom: 50px;
+        margin-left: 12%;     
+        margin-bottom: .5%;
         margin-top: 100px;
         
     
@@ -282,16 +284,31 @@ margin-bottom: 30px;
     .newsletter{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin-left:16px;
-        margin-right: 20px;
+        margin-left: .16%;
+        margin-right: 0.8%;
+        text-align: center;
+        align-items: center;
     }
     .email-area{
-        max-width: 200px;
+        max-width: 250px;
         width: 80%;
-        margin-right: 50px;
+       
+        text-align: center;
         
     }
+    .email-area input{
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid grey;
+        margin-bottom: 30px;
+        text-align: center;
+        
+        }
+        .email-area .link-button{
+            margin-left: 25px;
+            
+        }
     /* footer  */
     .footer-sec{
         
@@ -312,4 +329,21 @@ margin-bottom: 30px;
     .tabels, .all-players, .page-header{
         width: 100%;
     }
+
 }
+@media only screen and (max-width: 1440px) and (min-width:1080px}
+{
+
+    .table-a, .table-b{
+        margin-left: 400px;
+    }
+    .newsletter{
+        margin-left: 50px;
+        align-items: center;
+        text-align: center;
+    }
+        .email-area .link-button{
+            margin-left: 35px;
+            
+        }
+    }
